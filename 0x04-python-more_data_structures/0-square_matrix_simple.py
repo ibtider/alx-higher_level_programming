@@ -1,12 +1,7 @@
 #!/usr/bin/python3
-
-
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
+    response = []
     for row in matrix:
-        new_row = []
-        for col in row:
-            new_element = col ** 2
-            new_row.append(new_element)
-        new_matrix.append(new_row)
-    return (new_matrix)
+        sub_matrix = map(lambda num: num**2, row)
+        response.append(list(sub_matrix))
+    return response
