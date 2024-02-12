@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Write a class Rectangle that defines a rectangle by: (based on 4-rectangle.py)
+Write a class Rectangle that defines a rectangle by: (based on 3-rectangle.py)
 """
 
 
@@ -84,7 +84,3 @@ class Rectangle:
     def __repr__(self):
         """Return the string representation of the Rectangle."""
         return f"Rectangle({self.__width}, {self.__height})"
-
-    def __del__(self):
-        """Print a message for every deletion of a Rect."""
-        print("Bye rectangle...")
